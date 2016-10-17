@@ -1,5 +1,5 @@
 Int_temp=`/usr/local/bin/temper-poll |grep 'Device #0'|gawk '{print $3}'|sed 's/°C//' | cut -c 1-2`
-#Ext_temp=`/usr/local/bin/temper-poll |grep 'Device #1'|gawk '{print $3}'|sed 's/°C//' | cut -c 1-2`
+Ext_temp=`/usr/local/bin/temper-poll |grep 'Device #1'|gawk '{print $3}'|sed 's/°C//' | cut -c 1-2`
 
 #echo $Int_temp
 #echo $Ext_temp
